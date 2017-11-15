@@ -1,4 +1,4 @@
-keccak_hash (v1.4)
+keccak_hash (v1.4.1)
 ===========================
 
 Python module for Smartcash's Keccak hashing.
