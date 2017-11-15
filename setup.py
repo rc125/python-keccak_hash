@@ -11,6 +11,6 @@ setup (name = 'keccak_hash',
        maintainer = 'rc125',
        maintainer_email = 'rc125@protonmail.com',
        url = 'https://github.com/rc125/python-keccak_hash',
-       download_url = 'https://github.com/rc125/python-keccak_hash/raw/master/dist/keccak_hash-1.4.tar.gz',
+       download_url = 'https://github.com/rc125/python-keccak_hash/archive/1.4.1.tar.gz',
        description = 'Binding for keccak proof of work hashing.',
        ext_modules = [keccak_hash_module])
