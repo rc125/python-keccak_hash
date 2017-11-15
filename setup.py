@@ -1,22 +1,16 @@
 from distutils.core import setup, Extension
 
-x11_hash_module = Extension('x11_hash',
-                                 sources = ['x11module.c',
-                                            'x11hash.c',
-                                            'sha3/blake.c',
-                                            'sha3/bmw.c',
-                                            'sha3/groestl.c',
-                                            'sha3/jh.c',
-                                            'sha3/keccak.c',
-                                            'sha3/skein.c',
-                                            'sha3/cubehash.c',
-                                            'sha3/echo.c',
-                                            'sha3/luffa.c',
-                                            'sha3/simd.c',
-                                            'sha3/shavite.c'],
+keccak_hash_module = Extension('keccak_hash',
+                                 sources = ['keccakmodule.c',
+                                            'keccakhash.c',
+                                            'sha3/keccak.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'x11_hash',
+setup (name = 'keccak_hash',
        version = '1.4',
-       description = 'Binding for X11 proof of work hashing.',
-       ext_modules = [x11_hash_module])
+       author = 'rc125',
+       author_email = 'rc125@protonmail.com',
+       url = 'https://github.com/rc125/python-keccak_hash',
+       download_url = 'https://github.com/rc125/python-keccak_hash/raw/master/dist/keccak_hash-1.4.tar.gz',
+       description = 'Binding for keccak proof of work hashing.',
+       ext_modules = [keccak_hash_module])
