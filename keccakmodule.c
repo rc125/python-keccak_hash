@@ -45,7 +45,7 @@ static struct PyModuleDef KECCAKModule = {
     KECCAKMethods
 };
 
-PyMODINIT_FUNC PyInit_x11_hash(void) {
+PyMODINIT_FUNC PyInit_keccak_hash(void) {
     return PyModule_Create(&KECCAKModule);
 }
 
