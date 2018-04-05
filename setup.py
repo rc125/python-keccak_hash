@@ -7,7 +7,7 @@ keccak_hash_module = Extension('keccak_hash',
                                include_dirs=['.', './sha3'])
 
 setup (name = 'keccak_hash',
-       version = '1.4.2',
+       version = '1.4.3',
        maintainer = 'rc125',
        maintainer_email = 'rc125@protonmail.com',
        url = 'https://github.com/rc125/python-keccak_hash',
